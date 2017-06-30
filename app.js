@@ -47,4 +47,8 @@ io.on('connection', function (socket) {
     }
   })
 });
-server.listen(8080);
+server.listen(8080,function (err) {
+  if(!err) {
+    console.log('app is listening 8080')
+  }
+});
